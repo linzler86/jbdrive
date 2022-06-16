@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="">
+        <title>그룹 로그인 화면</title>
+        <link rel="stylesheet" href="../css/group.css">
+    </head>
+    <body>
+        <div class="center">
+
+
+            <h1>GROUP LOGIN</h1>
+            <form action='/group' method='post'>
+
+            <div class="txt_field">
+                <input type='text' name='groupId' placeholder="ID">
+                <span></span>
+                <label for="username">Group ID</label> 
+
+            </div>
+            <div class="txt_field">
+                <input type='password' name='groupPw' placeholder="PW" >
+                <span></span>
+                <label for="password">Group PW </label>
+                <div style="margin-top: 10px;"></div>
+                <input type="submit" value="Login">
+                <!--<button class="w-btn w-btn-neon2" type='submit'> 그룹접속하기</button>-->
+               <div class="signup_link">
+                Do you have no ID?<a id="" href='/groupJoin'>sing up</a>
+            </div>
+
+
+        </form>
+        </div>
+    </div>
+    </body>
+</html>

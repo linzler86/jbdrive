@@ -1,0 +1,128 @@
+
+
+#loginwrap
+{
+    width: 900px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: aliceblue;
+  margin-left: 30%;
+}
+
+#HHH
+{
+
+  margin-left: 40%;
+
+}
+
+#aaa
+{
+    margin-left: 650px;
+    margin-top: 50px;
+}
+
+.input-box{
+    position:relative;
+    width: 100%;
+    margin:10px 0;
+    
+  }
+.input-box > input{
+    background:transparent;
+    border:none;
+    border-bottom: solid 1px #ccc;
+    padding:20px 0px 5px 0px;
+    font-size:14pt;
+    width:100%;
+  }
+
+  input::placeholder{
+	color:transparent;
+}
+
+input:placeholder-shown + label{
+    color:#aaa;
+    font-size:14pt;
+    top:15px;
+}
+  
+input:focus + label, label{
+    color:#8aa1a1;
+    font-size:10pt;
+    pointer-events: none;
+    position: absolute;
+    left:0px;
+    top:0px;
+    transition: all 0.2s ease ;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+  }
+
+  input:focus, input:not(:placeholder-shown){
+    border-bottom: solid 1px #8aa1a1;
+    outline:none;
+  }
+  
+  form{
+      width: 80%;
+      height: 80%;
+  }
+  
+
+.w-btn {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+    margin-left: 36%;
+    margin-top: 30px;
+}
+
+.w-btn-neon2 {
+    position: relative;
+    border: none;
+    min-width: 200px;
+    min-height: 50px;
+    background: linear-gradient(
+        90deg,
+        rgba(129, 230, 217, 1) 0%,
+        rgba(79, 209, 197, 1) 100%
+    );
+    border-radius: 1000px;
+    color: darkslategray;
+    cursor: pointer;
+    box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+body
+{
+    background-image: url("../img/p-images/hard_drive2.jpg");
+    background-repeat: no-repeat;
+}
+
+.header{
+    position:relative;
+    padding:18px 5%;
+    }
+        
+    .header .logo{
+    float:left;
+    }
+        
+    .header .logo a{
+    font-size:26px;
+    color:red;
+    font-weight:normal;
+    }

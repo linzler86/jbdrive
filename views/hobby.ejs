@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JBU DRIVE</title>
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/hobby.css">
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+</head>
+
+<body>
+  <div id="wrap">
+    <header class="header cfixed">
+      <h1 class="logo"><a href="/main">JBU DRIVE</a></h1>
+      <nav>
+        <ul class="gnb">
+          <li>
+            <form action="site2" method="post">
+              <td>
+                <%= loginMember %>님 안녕하세요.
+              </td>
+            </form>
+          </li>
+          <li><button onClick="location.href='/logout'">로그아웃</button></li>
+        </ul>
+      </nav>
+
+      <span class="menu-toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </header>
+
+    <!-- hobby filter start -->
+    <section class="content" style="background-color: white; padding-bottom: 50px;">
+      <section class="display-section" style="margin-top: 0px ;">
+
+        <div class="main" style="margin-top: 0px ;">
+          <!--hobby start -->
+          <h2>Picture</h2>
+
+          <div id="filterbtn">
+            <!-- cardfilter Grid start -->
+            <button class="Fbtn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="Fbtn" onclick="filterSelection('scene')"> scene</button>
+            <button class="Fbtn" onclick="filterSelection('object')"> object</button>
+            <button class="Fbtn" onclick="filterSelection('food')"> food</button>
+            <button class="Fbtn" onclick="filterSelection('flower')"> flower</button>
+          </div>
+
+          <!-- card Grid start -->
+          <div class="row">
+
+            <div class="column scene">
+              <div class="content">
+                <img src="img/f bg1.jpg" alt="노을, 바다" style="width:100%" id="sumpic1">
+                <h4>scene</h4>
+                <p>노을, 바다</p>
+              </div>
+            </div>
+
+            <div class="column scene">
+              <div class="content">
+                <img src="../img/f bg2.jpg" alt="호수" style="width:100%" id="sumpic2">
+                <h4>scene</h4>
+                <p>호수</p>
+              </div>
+            </div>
+
+            <div class="column scene">
+              <div class="content">
+                <img src="../img/f bg3.jpg" alt="바다, 파도" style="width:100%" id="sumpic3">
+                <h4>scene</h4>
+                <p>바다, 파도</p>
+              </div>
+            </div>
+
+            <div class="column scene">
+              <div class="content">
+                <img src="../img/f bg4.jpg" alt="노을, 항구" style="width:100%" id="sumpic4">
+                <h4>scene</h4>
+                <p>노을, 항구</p>
+              </div>
+            </div>
+
+            <div class="column scene">
+              <div class="content">
+                <img src="../img/f bg5.jpg" alt="호수, 가족" style="width:100%" id="sumpic5">
+                <h4>scene</h4>
+                <p>호수, 가족</p>
+              </div>
+            </div>
+
+            <div class="column scene">
+              <div class="content">
+                <img src="../img/f beach.jpg" alt="해변" style="width:100%" id="sumpic6">
+                <h4>scene</h4>
+                <p>해변</p>
+              </div>
+            </div>
+
+            <div class="column scene">
+              <div class="content">
+                <img src="../img/f pinkmull.jpg" alt="들판" style="width:100%" id="sumpic7">
+                <h4>scene</h4>
+                <p>들판</p>
+              </div>
+            </div>
+
+            <div class="column scene">
+              <div class="content">
+                <img src="../img/f Dworld.jpg" alt="경기장, 낮" style="width:100%" id="sumpic8">
+                <h4>scene</h4>
+                <p>경기장, 낮</p>
+              </div>
+            </div>
+
+            <div class="column scene">
+              <div class="content">
+                <img src="../img/f Nworld.jpg" alt="경기장, 밤" style="width:100%" id="sumpic9">
+                <h4>scene</h4>
+                <p>경기장, 밤</p>
+              </div>
+            </div>
+
+            <div class="column scene">
+              <div class="content">
+                <img src="../img/f jteather.jpg" alt="야경, 극장" style="width:100%" id="sumpic10">
+                <h4>scene</h4>
+                <p>야경, 극장</p>
+              </div>
+            </div>
+
+            <div class="column scene">
+              <div class="content">
+                <img src="../img/f jroad.jpg" alt="야경, 거리" style="width:100%" id="sumpic11">
+                <h4>scene</h4>
+                <p>야경, 거리</p>
+              </div>
+            </div>
+
+            <div class="column scene">
+              <div class="content">
+                <img src="../img/f nlight.jpg" alt="야경, 조명" style="width:100%" id="sumpic12">
+                <h4>scene</h4>
+                <p>야경, 조명</p>
+              </div>
+            </div>
+
+            <div class="column food">
+              <div class="content">
+                <img src="../img/f nabe.jpg" alt="전골" style="width:100%" id="sumpic13">
+                <h4>food</h4>
+                <p>전골</p>
+              </div>
+            </div>
+
+            <div class="column food">
+              <div class="content">
+                <img src="../img/f lamb.jpg" alt="양고기" style="width:100%" id="sumpic14">
+                <h4>food</h4>
+                <p>양고기</p>
+              </div>
+            </div>
+
+            <div class="column food">
+              <div class="content">
+                <img src="../img/f pizza.jpg" alt="피자" style="width:100%" id="sumpic15">
+                <h4>food</h4>
+                <p>피자</p>
+              </div>
+            </div>
+
+            <div class="column food">
+              <div class="content">
+                <img src="../img/f cho.jpg" alt="초밥" style="width:100%" id="sumpic16">
+                <h4>food</h4>
+                <p>초밥</p>
+              </div>
+            </div>
+
+            <div class="column food">
+              <div class="content">
+                <img src="../img/f meat.jpg" alt="소고기" style="width:100%" id="sumpic17">
+                <h4>food</h4>
+                <p>소고기</p>
+              </div>
+            </div>
+
+            <div class="column food">
+              <div class="content">
+                <img src="../img/f bear.jpg" alt="타르트" style="width:100%" id="sumpic18">
+                <h4>food</h4>
+                <p>타르트</p>
+              </div>
+            </div>
+
+            <div class="column food">
+              <div class="content">
+                <img src="../img/f strawberry.jpg" alt="타르트, 과일" style="width:100%" id="sumpic19">
+                <h4>food</h4>
+                <p>타르트, 과일</p>
+              </div>
+            </div>
+
+            <div class="column food">
+              <div class="content">
+                <img src="../img/f wine.jpg" alt="술, 와인" style="width:100%" id="sumpic20">
+                <h4>food</h4>
+                <p>술, 와인</p>
+              </div>
+            </div>
+
+            <div class="column food">
+              <div class="content">
+                <img src="../img/f cocktail.jpg" alt="술, 칵테일" style="width:100%" id="sumpic21">
+                <h4>food</h4>
+                <p>술, 칵테일</p>
+              </div>
+            </div>
+
+            <div class="column object">
+              <div class="content">
+                <img src="../img/f fwater.jpg" alt="인공 폭포" style="width:100%" id="sumpic22">
+                <h4>object</h4>
+                <p>인공 폭포</p>
+              </div>
+            </div>
+
+            <div class="column object">
+              <div class="content">
+                <img src="../img/f train.jpg" alt="열차" style="width:100%" id="sumpic23">
+                <h4>object</h4>
+                <p>열차</p>
+              </div>
+            </div>
+
+            <div class="column object">
+              <div class="content">
+                <img src="../img/f snow.jpg" alt="눈, 소나무" style="width:100%" id="sumpic24">
+                <h4>object</h4>
+                <p>눈, 소나무</p>
+              </div>
+            </div>
+
+            <div class="column object">
+              <div class="content">
+                <img src="../img/f banch.jpg" alt="조명, 동상" style="width:100%" id="sumpic25">
+                <h4>object</h4>
+                <p>조명, 동상</p>
+              </div>
+            </div>
+
+            <div class="column object">
+              <div class="content">
+                <img src="../img/f bulb.jpg" alt="조명" style="width:100%" id="sumpic26">
+                <h4>object</h4>
+                <p>조명</p>
+              </div>
+            </div>
+
+            <div class="column object">
+              <div class="content">
+                <img src="../img/f santa.jpg" alt="조명, 산타" style="width:100%" id="sumpic27">
+                <h4>object</h4>
+                <p>조명, 산타 </p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f prose.jpg" alt="핑크 달리아" style="width:100%" id="sumpic28">
+                <h4>flower</h4>
+                <p>핑크 달리아</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f yrose.jpg" alt="장미" style="width:100%" id="sumpic29">
+                <h4>flower</h4>
+                <p>장미</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f wrose.jpg" alt="백장미" style="width:100%" id="sumpic30">
+                <h4>flower</h4>
+                <p>백장미</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f pcircle.jpg" alt="별수국, 화관" style="width:100%" id="sumpic31">
+                <h4>flower</h4>
+                <p>별수국, 화관</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f yflower.jpg" alt="노란 달리아" style="width:100%" id="sumpic32">
+                <h4>flower</h4>
+                <p>노란 달리아</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f mwflower.jpg" alt="백장미, 꽃밭" style="width:100%" id="sumpic33">
+                <h4>flower</h4>
+                <p>백장미, 꽃밭</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f pround.jpg" alt="별수국" style="width:100%" id="sumpic34">
+                <h4>flower</h4>
+                <p>별수국</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f min.jpg" alt="민들레" style="width:100%" id="sumpic35">
+                <h4>flower</h4>
+                <p>민들레</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f eggflo.jpg" alt="마가렛, 꽃밭" style="width:100%" id="sumpic36">
+                <h4>flower</h4>
+                <p>마가렛, 꽃밭</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f rwflower.jpg" alt="꽃다발" style="width:100%" id="sumpic37">
+                <h4>flower</h4>
+                <p>꽃다발</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f pflower.jpg" alt="펜지꽃" style="width:100%" id="sumpic38">
+                <h4>flower</h4>
+                <p>펜지꽃</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f robe.jpg" alt="다육이" style="width:100%" id="sumpic39">
+                <h4>flower</h4>
+                <p>다육이</p>
+              </div>
+            </div>
+
+            <div class="column flower">
+              <div class="content">
+                <img src="../img/f pflowers.jpg" alt="펜지꽃, 꽃밭" style="width:100%" id="sumpic40">
+                <h4>flower</h4>
+                <p>펜지꽃, 꽃밭</p>
+              </div>
+            </div>
+
+          </div><!-- card Grid end -->
+        </div><!-- cardfliter Grid end -->
+
+        <!-- modal start -->
+        <div id="modalpic1" class="modal">
+          <span class="close1">&times;</span>
+          <img class="modal-pic" id="img01">
+          <div id="picinfo1"></div>
+        </div>
+
+        <div id="modalpic2" class="modal">
+          <span class="close2">&times;</span>
+          <img class="modal-pic" id="img02">
+          <div id="picinfo2"></div>
+        </div>
+
+        <div id="modalpic3" class="modal">
+          <span class="close3">&times;</span>
+          <img class="modal-pic" id="img03">
+          <div id="picinfo3"></div>
+        </div>
+
+        <div id="modalpic4" class="modal">
+          <span class="close4 ">&times;</span>
+          <img class="modal-pic" id="img04">
+          <div id="picinfo4"></div>
+        </div>
+
+        <div id="modalpic5" class="modal">
+          <span class="close5">&times;</span>
+          <img class="modal-pic" id="img05">
+          <div id="picinfo5"></div>
+        </div>
+
+        <div id="modalpic6" class="modal">
+          <span class="close6">&times;</span>
+          <img class="modal-pic" id="img06">
+          <div id="picinfo6"></div>
+        </div>
+
+        <div id="modalpic7" class="modal">
+          <span class="close7">&times;</span>
+          <img class="modal-pic" id="img07">
+          <div id="picinfo7"></div>
+        </div>
+
+        <div id="modalpic8" class="modal">
+          <span class="close8">&times;</span>
+          <img class="modal-pic" id="img08">
+          <div id="picinfo8"></div>
+        </div>
+
+
+        <div id="modalpic9" class="modal">
+          <span class="close9">&times;</span>
+          <img class="modal-pic" id="img09">
+          <div id="picinfo9"></div>
+        </div>
+
+        <div id="modalpic10" class="modal">
+          <span class="close10">&times;</span>
+          <img class="modal-pic" id="img10">
+          <div id="picinfo10"></div>
+        </div>
+
+        <div id="modalpic11" class="modal">
+          <span class="close11">&times;</span>
+          <img class="modal-pic" id="img11">
+          <div id="picinfo11"></div>
+        </div>
+
+        <div id="modalpic12" class="modal">
+          <span class="close12">&times;</span>
+          <img class="modal-pic" id="img12">
+          <div id="picinfo12"></div>
+        </div>
+
+        <div id="modalpic13" class="modal">
+          <span class="close13">&times;</span>
+          <img class="modal-pic" id="img13">
+          <div id="picinfo13"></div>
+        </div>
+
+        <div id="modalpic14" class="modal">
+          <span class="close14">&times;</span>
+          <img class="modal-pic" id="img14">
+          <div id="picinfo14"></div>
+        </div>
+
+        <div id="modalpic15" class="modal">
+          <span class="close15">&times;</span>
+          <img class="modal-pic" id="img15">
+          <div id="picinfo15"></div>
+        </div>
+
+        <div id="modalpic16" class="modal">
+          <span class="close16">&times;</span>
+          <img class="modal-pic" id="img16">
+          <div id="picinfo16"></div>
+        </div>
+
+        <div id="modalpic17" class="modal">
+          <span class="close17">&times;</span>
+          <img class="modal-pic" id="img17">
+          <div id="picinfo17"></div>
+        </div>
+
+        <div id="modalpic18" class="modal">
+          <span class="close18">&times;</span>
+          <img class="modal-pic" id="img18">
+          <div id="picinfo18"></div>
+        </div>
+
+        <div id="modalpic19" class="modal">
+          <span class="close19">&times;</span>
+          <img class="modal-pic" id="img19">
+          <div id="picinfo19"></div>
+        </div>
+
+        <div id="modalpic20" class="modal">
+          <span class="close20">&times;</span>
+          <img class="modal-pic" id="img20">
+          <div id="picinfo20"></div>
+        </div>
+
+        <div id="modalpic21" class="modal">
+          <span class="close21">&times;</span>
+          <img class="modal-pic" id="img21">
+          <div id="picinfo21"></div>
+        </div>
+
+        <div id="modalpic22" class="modal">
+          <span class="close22">&times;</span>
+          <img class="modal-pic" id="img22">
+          <div id="picinfo22"></div>
+        </div>
+
+        <div id="modalpic23" class="modal">
+          <span class="close23">&times;</span>
+          <img class="modal-pic" id="img23">
+          <div id="picinfo23"></div>
+        </div>
+
+        <div id="modalpic24" class="modal">
+          <span class="close24">&times;</span>
+          <img class="modal-pic" id="img24">
+          <div id="picinfo24"></div>
+        </div>
+
+        <div id="modalpic25" class="modal">
+          <span class="close25">&times;</span>
+          <img class="modal-pic" id="img25">
+          <div id="picinfo25"></div>
+        </div>
+
+        <div id="modalpic26" class="modal">
+          <span class="close26">&times;</span>
+          <img class="modal-pic" id="img26">
+          <div id="picinfo26"></div>
+        </div>
+
+        <div id="modalpic27" class="modal">
+          <span class="close27">&times;</span>
+          <img class="modal-pic" id="img27">
+          <div id="picinfo27"></div>
+        </div>
+
+        <div id="modalpic28" class="modal">
+          <span class="close28">&times;</span>
+          <img class="modal-pic" id="img28">
+          <div id="picinfo28"></div>
+        </div>
+
+        <div id="modalpic29" class="modal">
+          <span class="close29">&times;</span>
+          <img class="modal-pic" id="img29">
+          <div id="picinfo29"></div>
+        </div>
+
+        <div id="modalpic30" class="modal">
+          <span class="close30">&times;</span>
+          <img class="modal-pic" id="img30">
+          <div id="picinfo30"></div>
+        </div>
+
+        <div id="modalpic31" class="modal">
+          <span class="close31">&times;</span>
+          <img class="modal-pic" id="img31">
+          <div id="picinfo31"></div>
+        </div>
+
+        <div id="modalpic32" class="modal">
+          <span class="close32">&times;</span>
+          <img class="modal-pic" id="img32">
+          <div id="picinfo32"></div>
+        </div>
+
+        <div id="modalpic33" class="modal">
+          <span class="close33">&times;</span>
+          <img class="modal-pic" id="img33">
+          <div id="picinfo33"></div>
+        </div>
+
+        <div id="modalpic34" class="modal">
+          <span class="close34">&times;</span>
+          <img class="modal-pic" id="img34">
+          <div id="picinfo34"></div>
+        </div>
+
+        <div id="modalpic35" class="modal">
+          <span class="close35">&times;</span>
+          <img class="modal-pic" id="img35">
+          <div id="picinfo35"></div>
+        </div>
+
+        <div id="modalpic36" class="modal">
+          <span class="close36">&times;</span>
+          <img class="modal-pic" id="img36">
+          <div id="picinfo36"></div>
+        </div>
+
+        <div id="modalpic37" class="modal">
+          <span class="close37">&times;</span>
+          <img class="modal-pic" id="img37">
+          <div id="picinfo37"></div>
+        </div>
+
+        <div id="modalpic38" class="modal">
+          <span class="close38">&times;</span>
+          <img class="modal-pic" id="img38">
+          <div id="picinfo38"></div>
+        </div>
+
+        <div id="modalpic39" class="modal">
+          <span class="close39">&times;</span>
+          <img class="modal-pic" id="img39">
+          <div id="picinfo39"></div>
+        </div>
+
+        <div id="modalpic40" class="modal">
+          <span class="close40">&times;</span>
+          <img class="modal-pic" id="img40">
+          <div id="picinfo40"></div>
+        </div>
+        <!-- madal end-->
+
+      </section>
+    </section>
+    <!-- hobby contents end-->
+
+    <footer class="footer" style="margin-top: 0px;">
+      <p class="copyright">JBU DRIVE</p>
+    </footer>
+  </div>
+
+  <script src="../js/filter.js"></script>
+  <script src="../js/mod1.js"></script>
+  <script src="../js/mod2.js"></script>
+  <script src="../js/mod3.js"></script>
+  <script src="../js/mod4.js"></script>
+  <script src="../js/mod5.js"></script>
+  <script src="../js/mod6.js"></script>
+  <script src="../js/mod7.js"></script>
+  <script src="../js/mod8.js"></script>
+  <script src="../js/mod9.js"></script>
+  <script src="../js/mod10.js"></script>
+  <script src="../js/mod11.js"></script>
+  <script src="../js/mod12.js"></script>
+  <script src="../js/mod13.js"></script>
+  <script src="../js/mod14.js"></script>
+  <script src="../js/mod15.js"></script>
+  <script src="../js/mod16.js"></script>
+  <script src="../js/mod17.js"></script>
+  <script src="../js/mod18.js"></script>
+  <script src="../js/mod19.js"></script>
+  <script src="../js/mod20.js"></script>
+  <script src="../js/mod21.js"></script>
+  <script src="../js/mod22.js"></script>
+  <script src="../js/mod23.js"></script>
+  <script src="../js/mod24.js"></script>
+  <script src="../js/mod25.js"></script>
+  <script src="../js/mod26.js"></script>
+  <script src="../js/mod27.js"></script>
+  <script src="../js/mod28.js"></script>
+  <script src="../js/mod29.js"></script>
+  <script src="../js/mod30.js"></script>
+  <script src="../js/mod31.js"></script>
+  <script src="../js/mod32.js"></script>
+  <script src="../js/mod33.js"></script>
+  <script src="../js/mod34.js"></script>
+  <script src="../js/mod35.js"></script>
+  <script src="../js/mod36.js"></script>
+  <script src="../js/mod37.js"></script>
+  <script src="../js/mod38.js"></script>
+  <script src="../js/mod39.js"></script>
+  <script src="../js/mod40.js"></script>
+</body>
+
+</html>

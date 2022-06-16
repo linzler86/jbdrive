@@ -1,0 +1,965 @@
+@charset "utf-8";
+
+/* 모바일용 CSS */
+/* 기본 CSS */
+.container {
+  width: 100%;
+  max-width: 1132px;
+  margin: 0 auto;
+}
+
+.cfixed:after,
+.container:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.sec-tit {
+  font-size: 42px;
+  color: red;
+  font-weight: normal;
+}
+
+.divider {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+  margin-top: 77px;
+  background: #eee;
+}
+
+.m-divider {
+  width: 20px;
+  margin: 0 auto;
+  margin-top: 77px;
+  background: #3f51b5;
+}
+
+/* 헤더 영역 CSS */
+.header {
+  position: relative;
+  padding: 18px 5%;
+}
+
+.header .logo {
+  float: left;
+}
+
+.header .logo a {
+  font-size: 26px;
+  color: red;
+  font-weight: normal;
+}
+
+.header .gnb {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #3f51b5;
+}
+
+.header .gnb li {
+  border-bottom: 1px solid #303f9f;
+}
+
+.header .gnb li a {
+  display: block;
+  padding: 14px 0 14px 5%;
+  font-size: 14px;
+  color: #fff;
+}
+
+.header .gnb li button {
+  background: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.header .gnb li button:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+
+.header .menu-toggle-btn {
+  float: right;
+  width: 20px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.header .menu-toggle-btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #3f51b5;
+}
+
+.header .menu-toggle-btn span:nth-child(2) {
+  margin: 5px 0;
+}
+
+/* 슬라이더 영역 CSS */
+.slider img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 디스플레이 영역 CSS */
+.display-section {
+  margin-top: 59px;
+  text-align: center;
+}
+
+.display-section .sec-tit {
+  margin-bottom: 30px;
+}
+
+.display-section .desc {
+  font-family: 'PT Serif';
+  color: #616161;
+  line-height: 1.9;
+}
+
+/* 프로모션 영역 CSS */
+.promotion-section {
+  margin-top: 68px;
+}
+
+.promotion-section .promo-list li {
+  margin-top: 52px;
+  text-align: center;
+}
+
+.promotion-section .promo-list li:first-child {
+  margin-top: 0;
+}
+
+.promotion-section .promo-list li img {
+  height: 100px;
+}
+
+.promotion-section .promo-list li h3 {
+  margin: 29px 0 20px 0;
+  color: #3f51b5;
+  font-weight: normal;
+}
+
+.promotion-section .promo-list li p {
+  font-size: 14px;
+  font-family: 'PT Serif';
+  color: #616161;
+  line-height: 1.5;
+}
+
+/* 최근 작업 영역 CSS */
+.work-section {
+  margin-top: 73px;
+}
+
+.work-section .sec-tit {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.work-section .work-list li {
+  width: 100%;
+}
+
+.work-section .work-list li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.work-section .work-list li a:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: #3f51b5;
+  content: "";
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.work-section .work-list li a:hover:before {
+  opacity: 0.86;
+}
+
+.work-section .work-list li .info {
+  position: absolute;
+  top: 0;
+  left: 23px;
+  z-index: 20;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.work-section .work-list li a:hover .info {
+  transform: translateY(23px);
+  opacity: 1;
+}
+
+.work-section .work-list li .info h3 {
+  margin-bottom: 8px;
+  font-size: 23px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.work-section .work-list li .info span {
+  font-size: 11px;
+  color: #fff;
+}
+
+.work-section .work-list li img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 최근 글 영역 CSS */
+.blog-section {
+  margin-top: 77px;
+}
+
+.blog-section .sec-tit {
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.blog-section .blog-list li {
+  width: 100%;
+  margin-top: 45px;
+}
+
+.blog-section .blog-list li:first-child {
+  margin-top: 0;
+}
+
+.blog-section .blog-list li img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-section .blog-list li time {
+  display: block;
+  margin: 11px 0 10px 0;
+  font-size: 11px;
+  color: #9e9e9e;
+}
+
+.blog-section .blog-list li h3 {
+  color: #424242;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+/* 연락처 영역 CSS */
+.contact-section {
+  margin-top: 109px;
+}
+
+.contact-section .sec-tit {
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.contact-section .form-box .form input {
+  padding-bottom: 13px;
+  margin-bottom: 38px;
+}
+
+/*.contact-section .form-box .textarea textarea{
+height:165px;
+}*/
+
+.contact-section .form-box .send-btn {
+  margin-top: 36px;
+  text-align: right;
+}
+
+.contact-section .form-box .send-btn button {
+  padding: 15px;
+  margin: 0;
+  border: 0;
+  font-size: 12px;
+  color: #fff;
+  background: #3f51b5;
+  font-family: 'Montserrat';
+  cursor: pointer;
+}
+
+/* 푸터 영역 CSS */
+.footer {
+  margin-top: 104px;
+}
+
+.footer p {
+  margin: 21px 0;
+  color: red;
+  text-align: center;
+}
+
+.board {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.board h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+tr,
+td,
+th,
+input,
+textarea {
+  font-size: 15px;
+  border: 1px solid #7bceef;
+
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+
+th {
+  background-color: #7bceef;
+
+}
+
+#btn {
+  margin-top: 10px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: tomato;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#btn:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.content_section {
+  order: 4;
+  padding: 20px;
+  padding: 1.25rem;
+  background: #fff;
+}
+
+.accordion {
+  background-color: #1478cd;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.25em;
+  padding: 1.25rem;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #3296d7;
+  outline: none;
+  transition: 0.4s;
+  font-weight: bold;
+  font-family: NanumGothic, 나눔고딕, "Nanum Gothic", "맑은 고딕", HelveticaNeue,
+    DroidSans, Sans-serif, Helvetica;
+}
+
+.active,
+.accordion:hover {
+  background-color: #245a97;
+  border: 1px solid #245a97;
+}
+
+.panel {
+  padding: 10px 18px;
+  padding: 0.625rem 1.125rem;
+  line-height: 2;
+  background-color: lightgray;
+  display: none;
+  overflow: hidden;
+  text-align: center;
+}
+
+.panel a {
+  font-weight: bold;
+  font-family: NanumGothic, 나눔고딕, "Nanum Gothic", "맑은 고딕", HelveticaNeue,
+    DroidSans, Sans-serif, Helvetica;
+  color: black;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.panel a:hover {
+  color: tomato
+}
+
+
+
+/* 태블릿용 CSS */
+@media all and (min-width:768px) {
+
+  /* 기본 CSS */
+  .divider {
+    margin-top: 124px;
+  }
+
+  .m-divider {
+    margin-top: 124px;
+  }
+
+  /* 헤더 영역 CSS */
+  .header {
+    position: static;
+    padding: 28px 52px;
+  }
+
+  .header .gnb {
+    display: block !important;
+    position: static;
+    float: right;
+    width: auto;
+    margin-top: 6px;
+    background: none;
+  }
+
+  .header .gnb li {
+    float: left;
+    margin-left: 21px;
+    border-bottom: 0;
+  }
+
+  .header .gnb li a {
+    padding: 0;
+    font-size: 16px;
+    color: #3f51b5;
+  }
+
+  .header .menu-toggle-btn {
+    display: none !important;
+  }
+
+  /* 디스플레이 영역 CSS */
+  .display-section {
+    margin-top: 95px;
+  }
+
+  /* 프로모션 영역 CSS */
+  .promotion-section {
+    margin-top: 110px;
+  }
+
+  .promotion-section .promo-list li {
+    float: left;
+    width: 23.046875%;
+    /* 177px ÷ 768px*/
+    margin-left: 2.604166666666667%;
+    /* 20px ÷ 768px*/
+    margin-top: 0;
+  }
+
+  .promotion-section .promo-list li:first-child {
+    margin-left: 0;
+  }
+
+  /* 최근 작업 영역 CSS */
+  .work-section {
+    margin-top: 118px;
+  }
+
+  .work-section .sec-tit {
+    margin-bottom: 76px;
+  }
+
+  .work-section .work-list li {
+    float: left;
+    width: 50%;
+  }
+
+  .work-section .work-list li .info {
+    left: 37px;
+  }
+
+  .work-section .work-list li a:hover .info {
+    transform: translateY(37px);
+  }
+
+  /* 최근 글 영역 CSS */
+  .blog-section {
+    margin-top: 124px;
+  }
+
+  .blog-section .sec-tit {
+    margin-bottom: 76px;
+  }
+
+  .blog-section .blog-list li {
+    float: left;
+    width: 31.59722222222222%;
+    /* 242.6666666666667px ÷ 768px*/
+    margin-left: 2.604166666666667%;
+    /* 20px ÷ 768px*/
+    margin-top: 0;
+  }
+
+  .blog-section .blog-list li:first-child {
+    margin-left: 0;
+  }
+
+  /* 연락처 영역 CSS */
+  .contact-section {
+    margin-top: 176px;
+  }
+
+  .contact-section .sec-tit {
+    margin-bottom: 76px;
+  }
+
+
+
+  .textarea {
+    width: 5000px;
+  }
+
+  .contact-section {
+    margin-right: 2.604166666666667%;
+    /* 20px ÷ 768px*/
+  }
+
+  .contact-section .form-box .form input:last-child {
+    margin-bottom: 0;
+  }
+
+  /* 푸터 영역 CSS */
+  .footer iframe {
+    height: 432px;
+  }
+
+  .footer p {
+    margin: 34px 0;
+  }
+
+  .board h1 {
+    font-size: 40px;
+  }
+
+  tr,
+  td,
+  th,
+  input,
+  textarea {
+    font-size: 24px;
+  }
+
+  #btn {
+    margin-top: 20px;
+    padding: 30px 40px;
+    font-size: 30px;
+  }
+
+  .content_section {
+    padding: 40px;
+    padding: 2.5rem;
+  }
+
+  .accordion {
+    text-align: left;
+  }
+
+  .panel {
+    text-align: left;
+  }
+}
+
+/* PC용 CSS */
+@media all and (min-width:1132px) {
+
+  /* 디스플레이 영역 CSS */
+  .display-section {
+    text-align: left;
+  }
+
+  .display-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .display-section .desc {
+    position: relative;
+    float: right;
+    padding-left: 20px;
+    font-family: 'PT Serif';
+    color: #616161;
+    line-height: 1.9;
+  }
+
+  .display-section .desc:before {
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 2px;
+    height: 44px;
+    background: #e0e0e0;
+    content: "";
+  }
+
+  /* 프로모션 영역 CSS */
+  .promotion-section .promo-list li {
+    width: 23.67491166077739%;
+    /* 268px ÷ 1132px*/
+    margin-left: 1.76678445229682%;
+    /* 20px ÷ 1132px*/
+  }
+
+  /* 최근 작업 영역 CSS */
+  .work-section .sec-tit {
+    text-align: left;
+  }
+
+  .work-section .work-list li {
+    width: 25%;
+  }
+
+  /* 최근 글 영역 CSS */
+  .blog-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .blog-section .blog-list {
+    float: right;
+    width: 74.5583038869258%;
+    /* 844px ÷ 1132px*/
+  }
+
+  .blog-section .blog-list li {
+    width: 31.75355450236967%;
+    /* 268px ÷ 844px*/
+    margin-left: 2.369668246445498%;
+    /* 20px ÷ 844px*/
+  }
+
+  /* 연락처 영역 CSS */
+  .contact-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+}
+
+.form {
+
+  width: 100%;
+
+}
+
+.form-box {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 50px;
+}
+
+
+
+.contact-section {
+  margin-right: 2.369668246445498%;
+  /* 20px ÷ 844px*/
+}
+
+
+.content_section {
+  order: 3;
+  padding: 60px;
+  padding: 3.75rem;
+}
+
+#rightta {
+  margin-left: 700px;
+  margin-top: -270px;
+}
+
+#righttta br {
+  margin-left: 13px;
+}
+
+#taa {
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 80%;
+  background-color: white;
+}
+
+#taa td {
+  font-size: medium;
+  width: 50%;
+  height: 50px;
+}
+
+#tbb {
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 80%;
+  height: 150px;
+  background-color: white;
+}
+
+#tbb th {
+  width: 25%;
+  font-size: 24px
+}
+
+#tbb td {
+  font-size: medium;
+  width: 50%;
+  height: 50px;
+}
+
+#btu {
+  height: 30px;
+  margin-left: 10%;
+  font-size: small;
+
+}
+
+form button {
+  height: 30px;
+  margin-top: 40px;
+}
+
+h2 {
+
+  margin-right: -15%;
+}
+
+#inside {
+
+  height: 550px;
+  width: 90%;
+  border: 1px solid black;
+  margin-top: 10%;
+}
+
+button {
+  border-radius: 0
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit
+}
+
+button,
+select {
+  text-transform: none
+}
+
+[role=button] {
+  cursor: pointer
+}
+
+select {
+  word-wrap: normal
+}
+
+select:disabled {
+  opacity: 1
+}
+
+[list]::-webkit-calendar-picker-indicator {
+  display: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none
+}
+
+textarea {
+  resize: vertical
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+
+legend {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: calc(1.275rem + .3vw);
+  line-height: inherit
+}
+
+@media (min-width:1200px) {
+  legend {
+    font-size: 1.5rem
+  }
+}
+
+legend+* {
+  clear: left
+}
+
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-year-field {
+  padding: 0
+}
+
+::-webkit-inner-spin-button {
+  height: auto
+}
+
+[type=search] {
+  outline-offset: -2px;
+  -webkit-appearance: textfield
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-color-swatch-wrapper {
+  padding: 0
+}
+
+::-webkit-file-upload-button {
+  font: inherit
+}
+
+::file-selector-button {
+  font: inherit
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  width: 5%;
+  font-size: inherit;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #5c636a;
+  border-color: #565e64
+}
+
+.btn-check:focus+.btn-secondary,
+.btn-secondary:focus {
+  color: #fff;
+  background-color: #5c636a;
+  border-color: #565e64;
+  box-shadow: 0 0 0 .25rem rgba(130, 138, 145, .5)
+}
+
+.btn-check:active+.btn-secondary,
+.btn-check:checked+.btn-secondary,
+.btn-secondary.active,
+.btn-secondary:active,
+.show>.btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #565e64;
+  border-color: #51585e
+}
+
+.btn-check:active+.btn-secondary:focus,
+.btn-check:checked+.btn-secondary:focus,
+.btn-secondary.active:focus,
+.btn-secondary:active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .25rem rgba(130, 138, 145, .5)
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754
+}
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #157347;
+  border-color: #146c43
+}
+
+.btn-check:focus+.btn-success,
+.btn-success:focus {
+  color: #fff;
+  background-color: #157347;
+  border-color: #146c43;
+  box-shadow: 0 0 0 .25rem rgba(60, 153, 110, .5)
+}

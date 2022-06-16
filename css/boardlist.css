@@ -1,0 +1,200 @@
+.sub_news {
+    border: 0
+}
+
+.sub_news th {
+    border: 0
+}
+
+.sub_news td {
+    border: 0
+}
+
+.sub_news a {
+    color: #383838;
+    text-decoration: none
+}
+
+.sub_news {
+    width: 100%;
+    border-bottom: 1px solid #999;
+    color: #666;
+    font-size: 12px;
+    table-layout: fixed
+}
+
+.sub_news caption {
+    display: none
+}
+
+.sub_news th {
+    padding: 5px 0 6px;
+    border-top: solid 1px #999;
+    border-bottom: solid 1px #b2b2b2;
+    background-color: #1478cd;
+    color: white;
+    font-weight: bold;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.sub_news td {
+    padding: 8px 0 9px;
+    border-bottom: solid 1px #d2d2d2;
+    text-align: center;
+    line-height: 18px;
+    width: 300px
+}
+
+#a {
+    font-size: large
+}
+
+#b {
+    font-size: small;
+}
+
+.sub_news .date,
+.sub_news .hit {
+    padding: 0;
+    font-family: Tahoma;
+    font-size: 11px;
+    line-height: normal;
+}
+
+.sub_news .title {
+    text-align: left;
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+.sub_news .title .pic,
+.sub_news .title .new {
+    margin: 0 0 2px;
+    vertical-align: middle
+}
+
+.sub_news .title a.comment {
+    padding: 0;
+    background: none;
+    color: #f00;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#ges {
+    margin-top: 200px;
+}
+
+#next {
+
+
+    margin-top: 30px;
+
+}
+
+#back {
+
+    margin-top: 50px;
+    position: relative;
+
+
+}
+
+#vis {
+    margin-left: 49%;
+
+}
+
+
+#write {
+    margin-top: 30px;
+    float: right;
+    margin-right: 10px;
+
+}
+
+#g {
+    margin-left: 30px;
+    font-size: 13px;
+    color: red;
+    font-weight: normal;
+}
+
+#undo {
+    margin-top: 3%;
+    width: 90%;
+    height: 300px;
+}
+
+#undu {
+    margin-left: 45%;
+}
+
+
+.header {
+    position: relative;
+    padding: 18px 5%;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo a {
+    font-size: 26px;
+    color: red;
+    font-weight: normal;
+}
+
+.header .gnb {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #3f51b5;
+}
+
+.header .gnb li {
+    border-bottom: 1px solid #303f9f;
+}
+
+.header .gnb li a {
+    display: block;
+    padding: 14px 0 14px 5%;
+    font-size: 14px;
+    color: #fff;
+}
+
+.header .gnb li button {
+    background: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.header .gnb li button:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+
+.header .menu-toggle-btn {
+    float: right;
+    width: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.header .menu-toggle-btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #3f51b5;
+}
+
+.header .menu-toggle-btn span:nth-child(2) {
+    margin: 5px 0;
+}

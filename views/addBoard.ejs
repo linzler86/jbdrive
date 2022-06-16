@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>JBU DRIVE</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header cfixed">
+            <h1 class="logo"><a href="/boardlist">JBU TALK</a></h1>
+
+        </header>
+        <article class="slider">
+            <img src="img/p-images/hard_drive.jpg">
+        </article>
+
+        <section class="board">
+            <form action="/addBoard" method="post" style="display:inline-block">
+                <h1>게시판 입력</h1>
+                <table border="1">
+                    <tr>
+                        <th>비밀번호</th>
+                        <td>
+                            <input type="password" name="board_pw">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>제목</th>
+                        <td>
+                            <input type="text" name="board_title">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td>
+                            <textarea name="board_content" rows="5" cols="50"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>작성자</th>
+                        <td>
+                            <input type="text" name="board_user">
+                        </td>
+                    </tr>
+                </table>
+                <button id="btn" type="submit">글올리기</button>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <p class="copyright">JBU DRIVE</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>게시판 상세보기</title>
+        <link rel="stylesheet" href="../css/boarddetail.css">
+        <link rel="stylesheet" type="text/css" href="../css/default.css">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    </head>
+    <body>
+        <header class="header cfixed">
+            <h1 class="logo"><a href="/boardlist">JBU TALK</a></h1>
+        <h1 id="HHH">게시판 상세보기</h1>
+        <table class="detail_cs" border="1" cellspacing="0" summary="게시판 상세보기">
+            <tr>
+                <th>번호</th>
+                <td><%= boardDetail.board_no %></td>
+            </tr>
+            <tr>
+                <th>제목</th>
+                <td><%= boardDetail.board_title %></td>
+            </tr>
+            <tr>
+                <th>내용</th>
+                <td><%= boardDetail.board_content %></td>
+            </tr>
+            <tr>
+                <th>작성자</th>
+                <td><%= boardDetail.board_user %></td>
+            </tr>
+            <tr>
+                <th>날짜</th>
+                <td><%= boardDetail.board_date %></td>
+            </tr>
+            
+        </table>
+        <button style="margin-left:650px; margin-top: 30px; " onClick="location.href='/boardList'">목록</button>
+        
+        <button><a href="/updateBoard/<%= boardDetail.board_no %>" type="button">수정</a></button>
+        <button><a href="/deleteBoard/<%= boardDetail.board_no %>" type="button">삭제</a></button>
+    </body>
+</html>

@@ -1,0 +1,791 @@
+@charset "utf-8";
+
+/* 모바일용 CSS */
+/* 기본 CSS */
+.container {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+}
+
+.cfixed:after,
+.container:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.sec-tit {
+  font-size: 42px;
+  color: rgb(216, 216, 216);
+  font-weight: normal;
+}
+
+/* 헤더 영역 CSS */
+#wrap {
+  background-color: rgb(255, 255, 255);
+}
+
+
+/* 디스플레이 영역 CSS */
+.display-section {
+  margin-top: 59px;
+  text-align: center;
+}
+
+.display-section .sec-tit {
+  margin-bottom: 30px;
+  color: rgb(216, 216, 216);
+}
+
+.display-section .desc {
+  font-family: "PT Serif";
+  color: rgb(216, 216, 216);
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+
+/* hobby filter start*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.main h2 {
+  color: red;
+  margin-bottom: 5px;
+}
+
+.row {
+  margin: 10px -16px;
+  padding: 8px;
+}
+
+
+.row>.column {
+  padding: 8px;
+}
+
+.row .content {
+  border-radius: 2%;
+  background-color: #3f51b5;
+  color: #f2f2f2;
+  padding: 10px;
+}
+
+.row .contentp {
+  color: #616161;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.show {
+  display: block;
+}
+
+.Fbtn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #3f51b5;
+  cursor: pointer;
+  color: #f2f2f2;
+  border-radius: 10%;
+}
+
+.Fbtn:hover {
+  background-color: #ddd;
+}
+
+.Fbtn.active {
+  background-color: #666;
+  color: white;
+}
+
+/*모달*/
+/* 카드 썸네일 시작 */
+#sumpic1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic1:hover {
+  opacity: 0.7;
+}
+
+#sumpic2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic2:hover {
+  opacity: 0.7;
+}
+
+#sumpic3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic3:hover {
+  opacity: 0.7;
+}
+
+#sumpic4 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic4:hover {
+  opacity: 0.7;
+}
+
+#sumpic5 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic5:hover {
+  opacity: 0.7;
+}
+
+#sumpic6 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic6:hover {
+  opacity: 0.7;
+}
+
+#sumpic7 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic7:hover {
+  opacity: 0.7;
+}
+
+#sumpic8 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic8:hover {
+  opacity: 0.7;
+}
+
+#sumpic9 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic9:hover {
+  opacity: 0.7;
+}
+
+#sumpic10 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic10:hover {
+  opacity: 0.7;
+}
+
+#sumpic11 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic11:hover {
+  opacity: 0.7;
+}
+
+#sumpic12 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic12:hover {
+  opacity: 0.7;
+}
+
+#sumpic13 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic13:hover {
+  opacity: 0.7;
+}
+
+#sumpic14 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic14:hover {
+  opacity: 0.7;
+}
+
+#sumpic15 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic15:hover {
+  opacity: 0.7;
+}
+
+#sumpic16 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic16:hover {
+  opacity: 0.7;
+}
+
+#sumpic17 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic17:hover {
+  opacity: 0.7;
+}
+
+#sumpic18 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic18:hover {
+  opacity: 0.7;
+}
+
+#sumpic19 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic19:hover {
+  opacity: 0.7;
+}
+
+#sumpic20 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic20:hover {
+  opacity: 0.7;
+}
+
+#sumpic21 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic21:hover {
+  opacity: 0.7;
+}
+
+#sumpic22 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic22:hover {
+  opacity: 0.7;
+}
+
+#sumpic23 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic23:hover {
+  opacity: 0.7;
+}
+
+#sumpic24 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic24:hover {
+  opacity: 0.7;
+}
+
+#sumpic25 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic25:hover {
+  opacity: 0.7;
+}
+
+#sumpic26 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic26:hover {
+  opacity: 0.7;
+}
+
+#sumpic27 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic27:hover {
+  opacity: 0.7;
+}
+
+#sumpic28 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic28:hover {
+  opacity: 0.7;
+}
+
+#sumpic29 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic29:hover {
+  opacity: 0.7;
+}
+
+#sumpic30 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic30:hover {
+  opacity: 0.7;
+}
+
+#sumpic31 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic31:hover {
+  opacity: 0.7;
+}
+
+#sumpic32 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic32:hover {
+  opacity: 0.7;
+}
+
+#sumpic33 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic33:hover {
+  opacity: 0.7;
+}
+
+#sumpic34 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic34:hover {
+  opacity: 0.7;
+}
+
+#sumpic35 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic35:hover {
+  opacity: 0.7;
+}
+
+#sumpic36 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic36:hover {
+  opacity: 0.7;
+}
+
+#sumpic37 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic37:hover {
+  opacity: 0.7;
+}
+
+#sumpic38 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic38:hover {
+  opacity: 0.7;
+}
+
+#sumpic39 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic39:hover {
+  opacity: 0.7;
+}
+
+#sumpic40 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sumpic40:hover {
+  opacity: 0.7;
+}
+
+/* 카드 썸네일 끝 */
+
+
+/* 모달사진 뒷 배경 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* 모달 사진 */
+.modal-pic {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* 모달 사진 설명 */
+#picinfo1,
+#picinfo2,
+#picinfo3,
+#picinfo4,
+#picinfo5,
+#picinfo6,
+#picinfo7,
+#picinfo8,
+#picinfo9,
+#picinfo10,
+#picinfo11,
+#picinfo12,
+#picinfo13,
+#picinfo14,
+#picinfo15,
+#picinfo16,
+#picinfo17,
+#picinfo18,
+#picinfo19,
+#picinfo20,
+#picinfo21,
+#picinfo22,
+#picinfo23,
+#picinfo24,
+#picinfo25,
+#picinfo26,
+#picinfo27,
+#picinfo28,
+#picinfo29,
+#picinfo30,
+#picinfo31,
+#picinfo32,
+#picinfo33,
+#picinfo34,
+#picinfo35,
+#picinfo36,
+#picinfo37,
+#picinfo38,
+#picinfo39,
+#picinfo40 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* 애니메이션 효과 */
+.modal-pic,
+#picinfo1,
+#picinfo2,
+#picinfo3,
+#picinfo4,
+#picinfo5,
+#picinfo6,
+#picinfo7,
+#picinfo8,
+#picinfo9,
+#picinfo10,
+#picinfo11,
+#picinfo12,
+#picinfo13,
+#picinfo14,
+#picinfo15,
+#picinfo16,
+#picinfo17,
+#picinfo18,
+#picinfo19,
+#picinfo20,
+#picinfo21,
+#picinfo22,
+#picinfo23,
+#picinfo24 #picinfo25,
+#picinfo26,
+#picinfo27,
+#picinfo28,
+#picinfo29,
+#picinfo30,
+#picinfo31,
+#picinfo32,
+#picinfo33,
+#picinfo34,
+#picinfo35,
+#picinfo36,
+#picinfo37,
+#picinfo38,
+#picinfo39,
+#picinfo40 {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* 끄기 버튼 */
+span {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+span:hover,
+span:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close1 .close2 .close3 .close4 .close5 .close6 .close7 .close8 .close9 .close10 .close11 .close12 .close13 .close14 .close15 .close16 .close17 .close18 .close19 .close20 .close21 .close22 .close23 .close24 .close25 .close26 .close27 .close28 .close29 .close30 .close31 .close32 .close33 .close34 .close35 .close36 .close37 .close38 .close39 .close40 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-pic {
+    width: 100%;
+  }
+}
+
+/* 푸터 영역 CSS */
+.footer {
+  background-color: #ffffff;
+}
+
+.footer p {
+  margin: 21px 0;
+  color: rgb(216, 216, 216);
+  text-align: center;
+}
+
+/* 태블릿용 CSS */
+@media all and (min-width: 922px) {
+
+  /* 기본 CSS */
+  .divider {
+    margin-top: 124px;
+  }
+
+  .m-divider {
+    margin-top: 124px;
+  }
+
+  /* 헤더 영역 CSS */
+
+
+  /* 디스플레이 영역 CSS */
+  .display-section {
+    margin-top: 3px;
+  }
+
+  .display-section .desc {
+    font-size: 20px;
+  }
+
+  .footer p {
+    margin: 34px 0;
+  }
+}
+
+/* PC용 CSS */
+@media all and (min-width: 1132px) {
+
+  /* 디스플레이 영역 CSS */
+  .display-section {
+    text-align: left;
+    margin-top: 3px;
+  }
+
+  .display-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+    color: rgb(216, 216, 216);
+  }
+
+  .display-section .desc {
+    position: relative;
+    float: right;
+    padding-left: 20px;
+    font-family: "PT Serif";
+    color: rgb(216, 216, 216);
+    line-height: 1.9;
+    font-size: 22px;
+  }
+
+  .display-section .desc:before {
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 2px;
+    height: 44px;
+    background: #3f51b5;
+    content: "";
+  }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>JBU DRIVE</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header cfixed">
+            <h1 class="logo"><a href="">JBU DRIVE</a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <form action="/main" method="post">
+                            <td>
+                                <%= loginMember %>님 안녕하세요.
+                            </td>
+                        </form>
+                    </li>
+
+                    <li><button onClick="location.href='/logout'">로그아웃</button></li>
+                    <li><button onclick="location.href='/memberDrop'">회원탈퇴</button></li>
+                </ul>
+            </nav>
+            <span class="menu-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </header>
+        <article class="slider">
+            <img src="img/p-images/hard_drive.jpg">
+        </article>
+        <section class="content">
+            <section class="display-section">
+                <div class="container">
+                    <h2 class="sec-tit">JBU DRIVE</h2>
+                    <p class="desc">중부대 학우 여러분들이 찾는 자료를 조금 더 편하게 찾을 수 있게 하도록 만든 사이트입니다</p>
+                </div>
+            </section>
+            <section class="promotion-section">
+                <div class="container">
+                    <ul class="promo-list">
+                        <li>
+                            <a href="/group">
+                                <img src="img/s-images/JBU_drive.png">
+                                <h3>Site1</h3>
+                                <p></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/site2">
+                                <img src="img/s-images/JBU_drive.png">
+                                <h3>Site2</h3>
+                                <p></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/hobby">
+                                <img src="img/s-images/JBU_drive.png">
+                                <h3>Site3</h3>
+                                <p></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/site4">
+                                <img src="img/s-images/JBU_drive.png">
+                                <h3>Site4</h3>
+                                <p></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="divider">
+
+            <section class="contact-section">
+                <div class="container">
+                    <h2 class="sec-tit">HMAC encryption</h2>
+                    <div class="form-box">
+                        <form action="" method="">
+                            <fieldset class="cfixed">
+                                <legend class="blind">CONTACT US</legend>
+                                <div class="form">
+                                    <form>
+                                        <div id="inside">
+                                            <table id="taa">
+
+                                                <tr>
+                                                    <th style="font-size: 18px;">HMAC 알고리즘 선택</th>
+                                                    <th>입력메시지</th>
+                                                    <th>
+                                                        공유키
+                                                    </th>
+                                                </tr>
+                                                <td>
+                                                    <select id="item">
+                                                        <option value="1">HMAC-MD5</option>
+                                                        <option value="2">HMAC-SHA1</option>
+                                                        <option value="3" selected>HMAC-SHA256</option>
+                                                        <option value="4">HMAC-SHA384</option>
+                                                        <option value="5">HMAC-SHA512</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <textarea style="width: 270px; font-size: small;" id="message"
+                                                        cols="80" rows="3">
+                                                    </textarea>
+                                                </td>
+                                                <td>
+                                                    <textarea style="width: 300px;" id="key" cols="80"
+                                                        rows="2">  </textarea>
+                                                </td>
+                                            </table>
+                                            </table>
+                                            <table id="tbb">
+                                                <th>
+                                                    <p style="margin-left: 13px; font-size: 24px;"> 메시지 인증 코드 </p>
+                                                    <br />
+                                                </th>
+                                                <td>
+                                                    <textarea style="width: 500px; height: 200px;" id="result"
+                                                        cols="500" rows="2"></textarea>
+                                                </td>
+                                            </table>
+                                            <button id="btu" type="button" class="btn btn-warning"
+                                                onclick="randomKey()">
+                                                공유키 생성
+                                            </button>
+                                            <button type="button" class="btn btn-primary" onclick="hmac()">
+                                                HMAC 계산
+                                            </button>
+                                            <button input type="reset" value="초기화" type="button"
+                                                class="btn btn-warning">초기화</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer class="footer">
+            <p style="margin-top: 300px;" class="copyright">JBU DRIVE</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/node-forge@0.7.0/dist/forge.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

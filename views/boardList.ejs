@@ -1,0 +1,80 @@
+<!Doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/boardlist.css">
+    <title>게시판 목록</title>
+    </style>
+</head>
+
+<body>
+    <header class="header cfixed">
+
+        <h1 class="logo"><a href="/boardlist">JBU TALK</a></h1>
+        <h1 style="float: right"><button  onClick="location.href='/grouplogout'">그룹 로그아웃</button></h1>
+        <div id="ges">
+            
+            <table class="sub_news" border="1" cellspacing="0" summary="게시판글제목리스트">
+                <caption>게시판 리스트</caption>
+                <colgroup>
+                    <col width="110">
+                    <col width="100">
+                    <col width="80">
+                </colgroup>
+
+
+                <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">작성자</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <% model.boardList.forEach((item, index)=> {
+                        %>
+                        <tr>
+                            <td class="title" style="text-align: center;">
+                                <%=item.board_no%>
+                            </td>
+                            <td id="a" class="date"><a href="/boardDetail/<%= item.board_no %>">
+                                    <%=item.board_title%>
+                                </a></td>
+                            <td id="b" class="hi">
+                                <%=item.board_user%>
+                            </td>
+                        </tr>
+                        <% }); %>
+                </tbody>
+            </table>
+            <button id="write" onClick="location.href='/addBoard'">글 작성하기</button>
+        </div>
+
+</body>
+
+
+</span>
+
+<a id="vis"></a>
+<% if(model.currentPage> 1){
+    %>
+    <a id="back" href="/boardList/<%= model.currentPage-1 %>">이전</a>
+    <% }; %>
+
+        <button onClick="location.href='http://localhost:3000/boardList/1'">1</button>
+        <button onClick="location.href='http://localhost:3000/boardList/2'">2</button>
+        <button onClick="location.href='http://localhost:3000/boardList/3'">3</button>
+        <button onClick="location.href='http://localhost:3000/boardList/4'">4</button>
+        <button onClick="location.href='http://localhost:3000/boardList/5'">5</button>
+        <% if(model.currentPage < model.lastPage){ %>
+            <a id="next" href="/boardList/<%= model.currentPage+1 %>">다음</a>
+            <% }; %>
+                </span>
+
+                <footer style="margin-left: 52%; margin-top: 20px;">
+                    <p class="copyright">JBU DRIVE</p>
+                </footer>
+
+
+</html>

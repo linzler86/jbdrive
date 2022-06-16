@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>JBU DRIVE</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header cfixed">
+            <h1 class="logo"><a href="/main">JBU DRIVE</a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <form action="site2" method="post">
+                            <td>
+                                <%= loginMember %>님 안녕하세요.
+                            </td>
+                        </form>
+                    </li>
+                    <li><button onClick="location.href='/logout'">로그아웃</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="slide">
+            <iframe src="http://yojin.net/" frameborder="0" width="100%" height="800px"></iframe>
+        </section>
+
+        <footer class="footer">
+            <p class="copyright">JBU DRIVE</p>
+        </footer>
+    </div>
+</body>
+
+</html>
